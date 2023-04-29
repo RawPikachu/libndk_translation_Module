@@ -132,14 +132,10 @@ print_modname() {
 on_install() {
   # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
   # Extend/change the logic to whatever you want
-  KERNEL=$(getprop ro.boot.hardware)
-  if [ "ranchu" != $KERNEL ]; then
-    abort "Only support Android Virtual Devices (AVD)"
-  fi
 
   RELEASE=$(getprop ro.build.version.release)
-  if [ "10" != $RELEASE ]; then
-    abort "Only support Android 10"
+  if [ "11" != $RELEASE ]; then
+    abort "Only support Android 11"
   fi 
  
   ui_print "- Extracting LibNDK Translation Files"

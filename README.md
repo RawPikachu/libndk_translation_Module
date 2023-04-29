@@ -1,11 +1,11 @@
 # LibNDK Translation for arm64-v8a,armeabi-v7a,armeabi
 ### newbit @ xda-developers
-Installs the libndk_translation functions into your AVD.
+Installs the libndk_translation functions into you AVD.
 
 ### Description
-Installs the libndk_translation functions into your AVD, Android 10 API 29
+Installs the libndk_translation functions into you AVD, Android 11
 
-### Notes
+### Notes (might not apply anymore)
 * rc file is not needed anymore, mount binfmt_misc and register copies are now in service.sh
 * system.prop is updated
 * set_perm_recursive are updated
