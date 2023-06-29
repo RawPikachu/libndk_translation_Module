@@ -134,8 +134,8 @@ on_install() {
   # Extend/change the logic to whatever you want
 
   RELEASE=$(getprop ro.build.version.release)
-  if [ "11" != $RELEASE ]; then
-    abort "Only support Android 11"
+  if [ "12" != $RELEASE ]; then
+    abort "Only support Android 12"
   fi 
  
   ui_print "- Extracting LibNDK Translation Files"
